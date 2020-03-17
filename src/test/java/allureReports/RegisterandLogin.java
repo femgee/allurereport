@@ -31,7 +31,7 @@ public class RegisterandLogin {
 
 	@Test(priority = 1)
 	@Description("Verify that user can register successfully")
-	@Epic("Epic2")
+	@Epic("Epic002")
 	@Feature("Feature1: Registration Test")
 	@Story("Story: Registration")
 	@Step("Verify Registration")
