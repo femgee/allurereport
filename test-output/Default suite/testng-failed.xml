@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="allureReports.Test1">
+      <class name="Access.RegisterandLogin">
         <methods>
+          <include name="setupinstance"/>
+          <include name="afterTest"/>
           <include name="registrationTest"/>
-          <include name="loginTest"/>
-          <include name="teardown"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- allureReports.Test1 -->
+      </class> <!-- Access.RegisterandLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
