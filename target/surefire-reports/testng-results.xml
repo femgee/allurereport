@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-17T20:56:03 GMT" name="Suite" finished-at="2020-03-17T20:56:19 GMT" duration-ms="15782">
+  <suite started-at="2020-03-17T21:47:26 GMT" name="Suite" finished-at="2020-03-17T21:47:41 GMT" duration-ms="15871">
     <groups>
     </groups>
-    <test started-at="2020-03-17T20:56:03 GMT" name="Register" finished-at="2020-03-17T20:56:19 GMT" duration-ms="15782">
+    <test started-at="2020-03-17T21:47:26 GMT" name="Register" finished-at="2020-03-17T21:47:41 GMT" duration-ms="15871">
       <class name="allureReports.RegisterandLogin">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.RegisterandLogin@757acd7b]" started-at="2020-03-17T20:56:03 GMT" name="setupinstance" finished-at="2020-03-17T20:56:16 GMT" duration-ms="12962" status="PASS">
+        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.RegisterandLogin@2638011]" started-at="2020-03-17T21:47:26 GMT" name="setupinstance" finished-at="2020-03-17T21:47:38 GMT" duration-ms="12732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method signature="registrationTest()[pri:1, instance:allureReports.RegisterandLogin@757acd7b]" started-at="2020-03-17T20:56:16 GMT" name="registrationTest" finished-at="2020-03-17T20:56:17 GMT" duration-ms="1554" status="PASS">
+        <test-method signature="registrationTest()[pri:1, instance:allureReports.RegisterandLogin@2638011]" started-at="2020-03-17T21:47:38 GMT" name="registrationTest" finished-at="2020-03-17T21:47:41 GMT" duration-ms="2352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:allureReports.RegisterandLogin@757acd7b]" started-at="2020-03-17T20:56:17 GMT" name="afterTest" finished-at="2020-03-17T20:56:19 GMT" duration-ms="1128" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:allureReports.RegisterandLogin@2638011]" started-at="2020-03-17T21:47:41 GMT" name="afterTest" finished-at="2020-03-17T21:47:41 GMT" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
