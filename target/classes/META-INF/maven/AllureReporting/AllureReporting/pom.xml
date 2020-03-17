@@ -34,17 +34,19 @@
 				<version>2.20</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
-					
+
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 				<dependencies>
+					<!-- https://mvnrepository.com/artifact/aspectj/aspectjweaver -->
 					<dependency>
-						<groupId>org.aspectj</groupId>
+						<groupId>aspectj</groupId>
 						<artifactId>aspectjweaver</artifactId>
-						<version>${aspectj.version}</version>
+						<version>1.5.4</version>
 					</dependency>
+
 				</dependencies>
 			</plugin>
 		</plugins>
