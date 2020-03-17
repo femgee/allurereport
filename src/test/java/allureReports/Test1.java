@@ -1,17 +1,13 @@
 package allureReports;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -20,39 +16,38 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-public class Test1 {
+public class Test1 extends BaseClass {
 
 	WebDriver driver;
 
 	@BeforeClass
 	public void setup() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		BaseClass bs= new BaseClass();
+		driver = bs.initialize_driver();
 		driver.get("https://demo.nopcommerce.com/");
-		driver.manage().window().maximize();
+		
 	}
 
 	@Test(priority = 1, description = "Verify logo presence on Home Page")
 	@Description("Verify logo precense on Home Page ------- ")
 	@Epic("Epic001")
-	@Feature("Feature1: Verify the Logo")
-	@Story("Story: logoPresence")
-	@Step("Verify logo Presence")
-	@Severity(SeverityLevel.MINOR)
+	@Feature("Feature1: Login")
+	@Story("Story: Login")
+	@Step("Verify Login")
+	@Severity(SeverityLevel.BLOCKER)
 	public void logoPresence() {
 
 		boolean disstatus = driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[1]")).isDisplayed();
 		Assert.assertEquals(disstatus, true);
 	}
 
-	@Description("Verify")
-	@Epic("Epic002")
-	@Feature("Feature1: Verify the")
-	@Story("Story: ")
-	@Step("Verify ")
+	@Test(priority = 2, description = "verify login feature works")
+	@Description("Verify Login")
+	@Epic("Epic001")
+	@Feature("Feature2: Login")
+	@Story("Story: Valid Login")
+	@Step("Verify Login ")
 	@Severity(SeverityLevel.BLOCKER)
-	@Test(priority = 2, description = "Verify")
 	public void loginTest() {
 
 		driver.findElement(By.linkText("Log in")).click();
@@ -65,15 +60,14 @@ public class Test1 {
 
 	}
 
-	@Description("Verify")
-	@Epic("Epic002")
-	@Feature("Feature1: Verify the")
-	@Story("Story: ")
-	@Step("Verify ")
+	@Test(priority = 3, description = "Verify that user can register")
+	@Description("Verify registration")
+	@Epic("Epic001")
+	@Feature("Feature3: Verify Registration")
+	@Story("Story: Verify Login")
+	@Step("Registration")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(priority = 1)
 	public void registrationTest() {
-
 		throw new SkipException("Skipping this test");
 	}
 
