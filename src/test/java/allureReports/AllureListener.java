@@ -54,7 +54,6 @@ public class AllureListener implements ITestListener
 	@Override
 	public void onTestFailure(ITestResult iTestResult) {
 		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
-		Object testClass = iTestResult.getInstance();
 		WebDriver driver = BaseClass.getDriver();
 		// Allure ScreenShot and SaveTestLog
 		if (driver instanceof WebDriver) {
