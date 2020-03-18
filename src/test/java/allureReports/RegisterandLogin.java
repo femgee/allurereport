@@ -64,7 +64,6 @@ public class RegisterandLogin {
 		driver.findElement(By.id("register-button")).click();
 	}
 
-	
 	@AfterTest
 	public void afterTest() {
 		driver.quit();

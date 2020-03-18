@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="15.586" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="16.364" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="12"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Femi\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.14.0.20191209-1923\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Europe/London"/>
+    <property name="maven.conf" value="C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="os.name" value="Windows 10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="jdk.debug" value="release"/>
-    <property name="maven.home" value="C:\exercise\CucumberProject\AllureReporting\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\.."/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Femi"/>
     <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2019-04-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-12.0.1"/>
     <property name="file.separator" value="\"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -50,13 +53,14 @@
     <property name="maven.multiModuleProjectDirectory" value="C:\exercise\CucumberProject\AllureReporting"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;%C:\\Automated/%;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath%ANDROID__HOME%\platform-tools;C:\Users\Femi\AppData\Local\Android\Sdk\tools;&quot;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-12.0.1\bin;C:\Program Files\Java\jre1.8.0_211;C:\Program Files\dotnet\;C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\CukeTest\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Femi\AppData\Local\GitHubDesktop\bin;C:\Users\Femi\AppData\Local\Programs\Microsoft VS C;C:\Android SDK\platform-tools;C:\allure-2.13.2\bin;C:\Users\Femi\scoop\shims;C:\Users\Femi\AppData\Local\GitHubDesktop\bin;C:\Users\Femi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Femi\AppData\Roaming\npm;C:\WINDOWS\system32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;%C:\\Automated/%;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath%ANDROID__HOME%\platform-tools;C:\Users\Femi\AppData\Local\Android\Sdk\tools;&quot;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-12.0.1\bin;C:\Program Files\Java\jre1.8.0_211;C:\Program Files\dotnet\;C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\CukeTest\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Users\Femi\AppData\Local\GitHubDesktop\bin;C:\Users\Femi\AppData\Local\Programs\Microsoft VS C;C:\Android SDK\platform-tools;C:\allure-2.13.2\bin;C:\Users\Femi\scoop\shims;C:\Users\Femi\AppData\Local\GitHubDesktop\bin;C:\Users\Femi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Femi\AppData\Roaming\npm;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="12.0.1+12"/>
-    <property name="classworlds.conf" value="C:\exercise\CucumberProject\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5035853314756802458.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Users\Femi\Maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="registrationTest" classname="allureReports.RegisterandLogin" time="1.467"/>
+  <testcase name="registrationTest" classname="allureReports.RegisterandLogin" time="2.325"/>
 </testsuite>
