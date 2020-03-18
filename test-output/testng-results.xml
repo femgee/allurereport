@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-17T19:44:52 GMT" name="Suite" finished-at="2020-03-17T19:45:06 GMT" duration-ms="13669">
+  <suite started-at="2020-03-18T22:05:24 GMT" name="Default suite" finished-at="2020-03-18T22:05:43 GMT" duration-ms="19043">
     <groups>
     </groups>
-    <test started-at="2020-03-17T19:44:52 GMT" name="Register" finished-at="2020-03-17T19:45:06 GMT" duration-ms="13669">
-      <class name="Access.RegisterandLogin">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:Access.RegisterandLogin@5fbdfdcf]" started-at="2020-03-17T19:44:52 GMT" name="setupinstance" finished-at="2020-03-17T19:45:02 GMT" duration-ms="9888" status="PASS">
+    <test started-at="2020-03-18T22:05:24 GMT" name="Default test" finished-at="2020-03-18T22:05:43 GMT" duration-ms="19043">
+      <class name="allureReports.RegisterandLogin">
+        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:24 GMT" name="setupinstance" finished-at="2020-03-18T22:05:37 GMT" duration-ms="12384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method signature="registrationTest()[pri:1, instance:Access.RegisterandLogin@5fbdfdcf]" started-at="2020-03-17T19:45:02 GMT" name="registrationTest" finished-at="2020-03-17T19:45:05 GMT" duration-ms="2817" status="PASS">
+        <test-method signature="registrationTest()[pri:1, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:37 GMT" name="registrationTest" finished-at="2020-03-18T22:05:40 GMT" duration-ms="3394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Access.RegisterandLogin@5fbdfdcf]" started-at="2020-03-17T19:45:05 GMT" name="afterTest" finished-at="2020-03-17T19:45:06 GMT" duration-ms="786" status="PASS">
+        <test-method signature="login()[pri:2, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:40 GMT" name="login" finished-at="2020-03-18T22:05:43 GMT" duration-ms="2368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:43 GMT" name="afterTest" finished-at="2020-03-18T22:05:43 GMT" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Access.RegisterandLogin -->
-    </test> <!-- Register -->
-  </suite> <!-- Suite -->
+      </class> <!-- allureReports.RegisterandLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
