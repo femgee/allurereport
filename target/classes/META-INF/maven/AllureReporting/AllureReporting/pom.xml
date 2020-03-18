@@ -15,7 +15,7 @@
 		<artifact>aspectjweaver</artifact>
 		<version>1.5.4</version>
 	</properties>
-	
+
 	<build>
 		<plugins>
 
@@ -27,7 +27,6 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-
 
 			</plugin>
 			<plugin>
