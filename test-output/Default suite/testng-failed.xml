@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="allureReports.RegisterandLogin">
+      <class name="allureReports.AddProductsToCartandCheckout">
         <methods>
           <include name="setupinstance"/>
-          <include name="login"/>
-          <include name="afterTest"/>
+          <include name="addProducttocart"/>
         </methods>
-      </class> <!-- allureReports.RegisterandLogin -->
+      </class> <!-- allureReports.AddProductsToCartandCheckout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

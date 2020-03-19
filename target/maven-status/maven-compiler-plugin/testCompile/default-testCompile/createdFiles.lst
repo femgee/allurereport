@@ -1,3 +1,4 @@
 allureReports\BaseClass.class
 allureReports\AllureListener.class
+allureReports\AddProductsToCartandCheckout.class
 allureReports\RegisterandLogin.class

@@ -31,7 +31,7 @@ public class RegisterandLogin {
 
 	@Test(priority = 1)
 	@Description("Verify that user can register successfully")
-	@Epic("Epic002")
+	@Epic("Epic001")
 	@Feature("Feature1: Registration Test")
 	@Story("Story: Registration")
 	@Step("Verify Registration")
@@ -89,11 +89,11 @@ public class RegisterandLogin {
 		button.click();
 
 	}
-
-	//
+	
+	
 	@AfterTest
 	public void afterTest() {
 		driver.quit();
-	}//
+	}
 
 }

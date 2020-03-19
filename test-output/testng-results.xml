@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-18T22:05:24 GMT" name="Default suite" finished-at="2020-03-18T22:05:43 GMT" duration-ms="19043">
+  <suite started-at="2020-03-19T20:15:48 GMT" name="Default suite" finished-at="2020-03-19T20:16:14 GMT" duration-ms="25515">
     <groups>
     </groups>
-    <test started-at="2020-03-18T22:05:24 GMT" name="Default test" finished-at="2020-03-18T22:05:43 GMT" duration-ms="19043">
-      <class name="allureReports.RegisterandLogin">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:24 GMT" name="setupinstance" finished-at="2020-03-18T22:05:37 GMT" duration-ms="12384" status="PASS">
+    <test started-at="2020-03-19T20:15:48 GMT" name="Default test" finished-at="2020-03-19T20:16:14 GMT" duration-ms="25515">
+      <class name="allureReports.AddProductsToCartandCheckout">
+        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.AddProductsToCartandCheckout@662b4c69]" started-at="2020-03-19T20:15:48 GMT" name="setupinstance" finished-at="2020-03-19T20:16:01 GMT" duration-ms="12877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method signature="registrationTest()[pri:1, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:37 GMT" name="registrationTest" finished-at="2020-03-18T22:05:40 GMT" duration-ms="3394" status="PASS">
+        <test-method signature="addProducttocart()[pri:3, instance:allureReports.AddProductsToCartandCheckout@662b4c69]" started-at="2020-03-19T20:16:01 GMT" name="addProducttocart" finished-at="2020-03-19T20:16:13 GMT" duration-ms="11817" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationTest -->
-        <test-method signature="login()[pri:2, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:40 GMT" name="login" finished-at="2020-03-18T22:05:43 GMT" duration-ms="2368" status="PASS">
+        </test-method> <!-- addProducttocart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.AddProductsToCartandCheckout@662b4c69]" started-at="2020-03-19T20:16:13 GMT" name="teardown" finished-at="2020-03-19T20:16:14 GMT" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:allureReports.RegisterandLogin@fa49800]" started-at="2020-03-18T22:05:43 GMT" name="afterTest" finished-at="2020-03-18T22:05:43 GMT" duration-ms="750" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- allureReports.RegisterandLogin -->
+        </test-method> <!-- teardown -->
+      </class> <!-- allureReports.AddProductsToCartandCheckout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
