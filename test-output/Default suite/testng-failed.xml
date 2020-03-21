@@ -6,6 +6,7 @@
       <class name="allureReports.AddProductsToCartandCheckout">
         <methods>
           <include name="setupinstance"/>
+          <include name="teardown"/>
           <include name="addProducttocart"/>
         </methods>
       </class> <!-- allureReports.AddProductsToCartandCheckout -->

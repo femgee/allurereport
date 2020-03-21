@@ -1,6 +1,7 @@
 package allureReports;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -27,13 +28,19 @@ public class AddProductsToCartandCheckout {
 		BaseClass bs = new BaseClass();
 		driver = bs.initialize_driver();
 		driver.get("https://demo.nopcommerce.com/notebooks");
+		
+		/*
+		//script to scroll down to an area the page
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,350)");
+		*/
 	}
 	
-	//
+	
 	@AfterTest
 	public void teardown() {
 		driver.quit();
-	}//
+	}
 
 	@Test(priority = 3)
 	@Description("Verify that user can add product into cart")
@@ -81,5 +88,6 @@ public class AddProductsToCartandCheckout {
 		driver.findElement(By.xpath("//*[@id=\"termsofservice\"]")).click();
 		driver.findElement(By.id("checkout")).click();
 	}
+	
 
 }
