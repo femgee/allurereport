@@ -5,6 +5,7 @@
     <classes>
       <class name="allureReports.FeaturedProduct">
         <methods>
+          <include name="teardown"/>
           <include name="NavigateToFeaturedProduct"/>
           <include name="setupinstance"/>
         </methods>

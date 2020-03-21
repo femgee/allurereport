@@ -5,6 +5,7 @@
     <classes>
       <class name="allureReports.RegisterandLogin"/>
       <class name="allureReports.AddProductsToCartandCheckout"/>
+      <class name="allureReports.FeaturedProduct"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -28,13 +28,15 @@ public class FeaturedProduct {
 
 	}
 
-	/*
-	 * @AfterTest public void teardown() { driver.quit(); }
-	 */
+	
+	 @AfterTest 
+	 public void teardown() { driver.quit(); }
+	 
 
 	@Test
 	public void NavigateToFeaturedProduct() throws InterruptedException {
 		driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]"));
+
 		// script to scroll down to Featured Product section
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,1200)");
@@ -43,12 +45,21 @@ public class FeaturedProduct {
 				"/html/body/div[6]/div[3]/div/div/div/div/div[4]/div[2]/div[3]/div/div[2]/div[3]/div[2]/input[1]"));
 		HTCOne.click();
 		Thread.sleep(3000);
-		//script to scroll up 
-		JavascriptExecutor up = (JavascriptExecutor)driver;
+
+		// script to scroll up
+		JavascriptExecutor up = (JavascriptExecutor) driver;
 		up.executeScript("scroll(0, -250);");
-		
+
+		// close the notification bar
 		driver.findElement(By.xpath("//*[@id=\"bar-notification\"]/div/span")).click();
+
+		// navigating to Cart page
 		WebElement cartbutton = driver.findElement(By.xpath("//*[@id=\"topcartlink\"]/a/span[1]"));
 		new Actions(driver).moveToElement(cartbutton).perform();
+
+		// click on Go Cart button
+		driver.findElement(By.className("Go to cart")).click();
+		
+		
 	}
 }
