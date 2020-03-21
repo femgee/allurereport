@@ -29,19 +29,16 @@ public class AddProductsToCartandCheckout {
 		driver = bs.initialize_driver();
 		driver.get("https://demo.nopcommerce.com/notebooks");
 		
-		/*
-		//script to scroll down to an area the page
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,350)");
-		*/
+		
+		
+		
 	}
-	
-	
+		
 	@AfterTest
 	public void teardown() {
 		driver.quit();
 	}
-
+	
 	@Test(priority = 3)
 	@Description("Verify that user can add product into cart")
 	@Epic("Epic003")
