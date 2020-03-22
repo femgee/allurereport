@@ -12,6 +12,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 /**
  * @author Femi
  *
@@ -25,15 +33,20 @@ public class FeaturedProduct {
 		BaseClass bs = new BaseClass();
 		driver = bs.initialize_driver();
 		driver.get("https://demo.nopcommerce.com");
-
 	}
 
-	
-	 @AfterTest 
-	 public void teardown() { driver.quit(); }
-	 
+	@AfterTest
+	public void teardown() {
+		driver.quit();
+	}
 
-	@Test
+	@Test(priority = 1)
+	@Description("Verify that users can add product to cart from Featured Product on the homepage")
+	@Epic("Epic003")
+	@Feature("Feature: Featured product test")
+	@Story("Story: Featured product")
+	@Step("Verify Featured product is accessible")
+	@Severity(SeverityLevel.NORMAL)
 	public void NavigateToFeaturedProduct() throws InterruptedException {
 		driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]"));
 
@@ -58,8 +71,6 @@ public class FeaturedProduct {
 		new Actions(driver).moveToElement(cartbutton).perform();
 
 		// click on Go Cart button
-		driver.findElement(By.className("Go to cart")).click();
-		
-		
+		driver.findElement(By.xpath("//*[@id=\"flyout-cart\"]/div/div[4]")).click();
 	}
 }
