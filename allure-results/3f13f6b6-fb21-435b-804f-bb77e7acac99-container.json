@@ -1,0 +1,1 @@
+{"uuid":"3f13f6b6-fb21-435b-804f-bb77e7acac99","name":"allureReports.FeaturedProduct","children":["d9c4330c-beed-4a48-8ed0-8e90fa5dd38b"],"befores":[{"name":"setupinstance","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1584879393972,"stop":1584879406262}],"afters":[],"links":[],"start":1584879337928,"stop":1584879411505}

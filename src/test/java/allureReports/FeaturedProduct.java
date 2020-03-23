@@ -11,7 +11,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -48,6 +47,7 @@ public class FeaturedProduct {
 	@Step("Verify Featured product is accessible")
 	@Severity(SeverityLevel.NORMAL)
 	public void NavigateToFeaturedProduct() throws InterruptedException {
+
 		driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]"));
 
 		// script to scroll down to Featured Product section
@@ -57,7 +57,6 @@ public class FeaturedProduct {
 		WebElement HTCOne = driver.findElement(By.xpath(
 				"/html/body/div[6]/div[3]/div/div/div/div/div[4]/div[2]/div[3]/div/div[2]/div[3]/div[2]/input[1]"));
 		HTCOne.click();
-		Thread.sleep(3000);
 
 		// script to scroll up
 		JavascriptExecutor up = (JavascriptExecutor) driver;
@@ -71,6 +70,7 @@ public class FeaturedProduct {
 		new Actions(driver).moveToElement(cartbutton).perform();
 
 		// click on Go Cart button
-		driver.findElement(By.xpath("//*[@id=\"flyout-cart\"]/div/div[4]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[2]/div[1]/div[4]/input[1]"))
+				.click();
 	}
 }
