@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="allureReports.FeaturedProduct">
+      <class name="allureReports.WomenProducts">
         <methods>
-          <include name="teardown"/>
-          <include name="NavigateToFeaturedProduct"/>
-          <include name="setupinstance"/>
+          <include name="addTshirt"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- allureReports.FeaturedProduct -->
+      </class> <!-- allureReports.WomenProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
