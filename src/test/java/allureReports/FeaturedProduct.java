@@ -43,7 +43,7 @@ public class FeaturedProduct {
 	@Test(priority = 1)
 	@Description("Verify that users can add product to cart from Featured Product on the homepage")
 	@Epic("Epic003")
-	@Feature("Feature: Featured product test")
+	@Feature("Feature: Featured product Verification")
 	@Story("Story: Featured product")
 	@Step("Verify Featured product is accessible")
 	@Severity(SeverityLevel.NORMAL)

@@ -2,9 +2,8 @@ package allureReports;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;//
-//import org.openqa.selenium.edge.EdgeDriver;//
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -15,8 +14,8 @@ public class BaseClass {
 
 	public WebDriver initialize_driver() {
 
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		// driver.manage().window().maximize();//

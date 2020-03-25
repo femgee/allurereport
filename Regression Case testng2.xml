@@ -4,6 +4,8 @@
   <test thread-count="3" name="RegressionPack">
     <classes>
       <class name="allureReports.FeaturedProduct"/>
+      <class name="allureReports.RegisterandLogin"/>
+      <class name="allureReports.AddProductsToCartandCheckout"/>
     </classes>
   </test> <!-- test -->
 </suite> <!-- Suite -->
