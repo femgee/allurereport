@@ -63,17 +63,17 @@ public class FeaturedProduct {
 		JavascriptExecutor up = (JavascriptExecutor) driver;
 		up.executeScript("scroll(0, -250);");
 
-		// Thread.sleep just for user to notice bar
+		// Thread.sleep just for user notice bar
 		Thread.sleep(3000);
 
 		// close the notification bar
 		driver.findElement(By.xpath("//*[@id=\"bar-notification\"]/div/span")).click();
 
-		//mouse shopping cart menu
+		// mouse shopping cart menu
 		Actions action = new Actions(driver);
 		WebElement shopbtn = driver.findElement(By.xpath("//*[@id=\"topcartlink\"]/a/span[1]"));
 		action.moveToElement(shopbtn).perform();
-		
+
 		driver.findElement(By.xpath("//div[@id='flyout-cart']//div//div//input"));
 
 	}
