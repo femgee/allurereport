@@ -69,7 +69,7 @@ public class Contact {
 
 	@Test(priority = 3)
 	@Description("Verify that user can access recently viewed products from Sitemap")
-	@Epic("Epic5")
+	@Epic("Epic005")
 	@Feature("Feature: Recently Viewed Products")
 	@Story("Story: Recently Viewed Products")
 	@Step("Verify that user can access Recently viewed products by from Sitemap")
@@ -86,9 +86,9 @@ public class Contact {
 
 	}
 
-	// @AfterTest
+	@AfterTest
 	public void teardown() {
 		driver.quit();
-	}//
+	}
 
 }
