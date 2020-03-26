@@ -36,11 +36,6 @@ public class Contact {
 		driver.get("https://demo.nopcommerce.com");
 	}
 
-	@AfterTest
-	public void teardown() {
-		driver.quit();
-	}
-
 	@Test(priority = 2)
 	@Description("Verify that user can send enquiry by clicking Contact Us on the Sitemap")
 	@Epic("Epic004")
@@ -71,4 +66,29 @@ public class Contact {
 		driver.findElement(By.name("send-email")).click();
 
 	}
+
+	@Test(priority = 3)
+	@Description("Verify that user can access recently viewed products from Sitemap")
+	@Epic("Epic5")
+	@Feature("Feature: Recently Viewed Products")
+	@Story("Story: Recently Viewed Products")
+	@Step("Verify that user can access Recently viewed products by from Sitemap")
+	@Severity(SeverityLevel.NORMAL)
+	public void recentlyviewedProducts() throws InterruptedException {
+
+		driver.get("https://demo.nopcommerce.com/");
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,2400)");
+
+		Thread.sleep(350);
+		WebElement Contact = driver.findElement(By.linkText("Recently viewed products"));
+		Contact.click();
+
+	}
+
+	// @AfterTest
+	public void teardown() {
+		driver.quit();
+	}//
+
 }

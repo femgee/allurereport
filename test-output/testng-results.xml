@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-25T18:40:47 GMT" name="Default suite" finished-at="2020-03-25T18:41:06 GMT" duration-ms="19001">
+  <suite started-at="2020-03-26T09:35:37 GMT" name="Default suite" finished-at="2020-03-26T09:36:04 GMT" duration-ms="26495">
     <groups>
     </groups>
-    <test started-at="2020-03-25T18:40:47 GMT" name="Default test" finished-at="2020-03-25T18:41:06 GMT" duration-ms="19001">
+    <test started-at="2020-03-26T09:35:37 GMT" name="Default test" finished-at="2020-03-26T09:36:04 GMT" duration-ms="26495">
       <class name="allureReports.Contact">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.Contact@271a140c]" started-at="2020-03-25T18:40:47 GMT" name="setupinstance" finished-at="2020-03-25T18:41:03 GMT" duration-ms="15265" status="PASS">
+        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.Contact@71238fc2]" started-at="2020-03-26T09:35:37 GMT" name="setupinstance" finished-at="2020-03-26T09:35:57 GMT" duration-ms="19963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method signature="verifycontactus()[pri:2, instance:allureReports.Contact@271a140c]" started-at="2020-03-25T18:41:03 GMT" name="verifycontactus" finished-at="2020-03-25T18:41:05 GMT" duration-ms="2477" status="PASS">
+        <test-method signature="verifycontactus()[pri:2, instance:allureReports.Contact@71238fc2]" started-at="2020-03-26T09:35:57 GMT" name="verifycontactus" finished-at="2020-03-26T09:36:01 GMT" duration-ms="3902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifycontactus -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.Contact@271a140c]" started-at="2020-03-25T18:41:05 GMT" name="teardown" finished-at="2020-03-25T18:41:06 GMT" duration-ms="981" status="PASS">
+        <test-method signature="recentlyviewedProducts()[pri:3, instance:allureReports.Contact@71238fc2]" started-at="2020-03-26T09:36:01 GMT" name="recentlyviewedProducts" finished-at="2020-03-26T09:36:04 GMT" duration-ms="2446" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
+        </test-method> <!-- recentlyviewedProducts -->
       </class> <!-- allureReports.Contact -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
