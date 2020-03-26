@@ -89,8 +89,7 @@ public class RegisterandLogin {
 		button.click();
 
 	}
-	
-	
+
 	@AfterTest
 	public void afterTest() {
 		driver.quit();
