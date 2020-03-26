@@ -27,17 +27,14 @@ public class AddProductsToCartandCheckout {
 		BaseClass bs = new BaseClass();
 		driver = bs.initialize_driver();
 		driver.get("https://demo.nopcommerce.com/notebooks");
-		
-		
-		
-		
+
 	}
-		
+	
 	@AfterTest
 	public void teardown() {
 		driver.quit();
 	}
-	
+
 	@Test(priority = 3)
 	@Description("Verify that user can add product into cart")
 	@Epic("Epic003")
@@ -45,7 +42,6 @@ public class AddProductsToCartandCheckout {
 	@Story("Story: Add to cart")
 	@Step("Verify Add to cart")
 	@Severity(SeverityLevel.CRITICAL)
-
 	public void addProducttocart() throws InterruptedException {
 
 		WebElement prod = driver.findElement(By.linkText("Apple MacBook Pro 13-inch"));
@@ -84,6 +80,5 @@ public class AddProductsToCartandCheckout {
 		driver.findElement(By.xpath("//*[@id=\"termsofservice\"]")).click();
 		driver.findElement(By.id("checkout")).click();
 	}
-	
 
 }

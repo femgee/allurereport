@@ -50,19 +50,19 @@ public class Contact {
 		jse.executeScript("window.scrollBy(0,2400)");
 		WebElement Contact = driver.findElement(By.xpath("//a[contains(text(),'Contact us')]"));
 		Contact.click();
-
+		
 		// enter contact name details
 		WebElement name = driver.findElement(By.id("FullName"));
 		name.sendKeys("Tester123");
-
+		
 		// enter email address
 		WebElement email = driver.findElement(By.id("Email"));
 		email.sendKeys("femgee2009@gmail.com");
-
+		
 		// enter enquiry details
 		WebElement enq = driver.findElement(By.id("Enquiry"));
 		enq.sendKeys("We are carrying out testing on this platform, please do not be alarmed");
-
+		
 		driver.findElement(By.name("send-email")).click();
 
 	}
@@ -75,15 +75,13 @@ public class Contact {
 	@Step("Verify that user can access Recently viewed products by from Sitemap")
 	@Severity(SeverityLevel.NORMAL)
 	public void recentlyviewedProducts() throws InterruptedException {
-
 		driver.get("https://demo.nopcommerce.com/");
+		// js script to scroll down
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,2400)");
-
 		Thread.sleep(350);
 		WebElement Contact = driver.findElement(By.linkText("Recently viewed products"));
 		Contact.click();
-
 	}
 
 	@AfterTest
