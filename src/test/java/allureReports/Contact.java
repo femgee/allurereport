@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -62,8 +61,9 @@ public class Contact {
 		// enter enquiry details
 		WebElement enq = driver.findElement(By.id("Enquiry"));
 		enq.sendKeys("We are carrying out testing on this platform, please do not be alarmed");
-		
 		driver.findElement(By.name("send-email")).click();
+		
+		
 
 	}
 
@@ -76,10 +76,12 @@ public class Contact {
 	@Severity(SeverityLevel.NORMAL)
 	public void recentlyviewedProducts() throws InterruptedException {
 		driver.get("https://demo.nopcommerce.com/");
+		
 		// js script to scroll down
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,2400)");
 		Thread.sleep(350);
+		
 		WebElement Contact = driver.findElement(By.linkText("Recently viewed products"));
 		Contact.click();
 	}

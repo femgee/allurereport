@@ -32,7 +32,7 @@ public class FeaturedProduct {
 	public void setupinstance() {
 		BaseClass bs = new BaseClass();
 		driver = bs.initialize_driver();
-		driver.get("https://demo.nopcommerce.com");
+
 	}
 
 	@AfterTest
@@ -41,14 +41,14 @@ public class FeaturedProduct {
 	}
 
 	@Test(priority = 1)
-	@Description("Verify that users can add product to cart from Featured Product on the homepage")
+	@Description("Verify that users can buy item through Feature Product section")
 	@Epic("Epic003")
 	@Feature("Feature: Featured product Verification")
 	@Story("Story: Featured product")
 	@Step("Verify Featured product is accessible")
 	@Severity(SeverityLevel.NORMAL)
 	public void NavigateToFeaturedProduct() throws InterruptedException {
-
+		driver.get("https://demo.nopcommerce.com");
 		driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]"));
 
 		// script to scroll down to Featured Product section
@@ -75,6 +75,28 @@ public class FeaturedProduct {
 		action.moveToElement(shopbtn).perform();
 
 		driver.findElement(By.xpath("//div[@id='flyout-cart']//div//div//input"));
+
+	}
+
+	@Test(priority = 2)
+	@Description("Verify that users can access new product page by clicking on the link on sitemap")
+	@Epic("Epic003")
+	@Feature("Feature: new product")
+	@Story("Story: new product")
+	@Step("Verify Featured product is accessible")
+	@Severity(SeverityLevel.NORMAL)
+	public void newproduct() {
+		driver.get("https://demo.nopcommerce.com/");
+		// script to scroll down to Featured Product section
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,1200)");
+
+		driver.findElement(By.xpath("//a[contains(text(),'New products')]")).click();
+		driver.navigate().back();
+
+		// script to scroll up
+		JavascriptExecutor up = (JavascriptExecutor) driver;
+		up.executeScript("scroll(0, -250);");
 
 	}
 }
