@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17199" started-at="2020-03-27T21:03:30 GMT" finished-at="2020-03-27T21:03:47 GMT">
+  <suite name="Suite" duration-ms="36082" started-at="2020-03-27T22:47:21 GMT" finished-at="2020-03-27T22:47:57 GMT">
     <groups>
     </groups>
-    <test name="SmokeTest" duration-ms="17199" started-at="2020-03-27T21:03:30 GMT" finished-at="2020-03-27T21:03:47 GMT">
-      <class name="allureReports.Contact">
-        <test-method status="PASS" signature="setupinstance()[pri:0, instance:allureReports.Contact@16aa0a0a]" name="setupinstance" is-config="true" duration-ms="12729" started-at="2020-03-27T21:03:30 GMT" finished-at="2020-03-27T21:03:43 GMT">
+    <test name="SmokeTest" duration-ms="36082" started-at="2020-03-27T22:47:21 GMT" finished-at="2020-03-27T22:47:57 GMT">
+      <class name="allureReports.FeaturedProduct">
+        <test-method status="PASS" signature="setupinstance()[pri:0, instance:allureReports.FeaturedProduct@691a7f8f]" name="setupinstance" is-config="true" duration-ms="9323" started-at="2020-03-27T22:47:38 GMT" finished-at="2020-03-27T22:47:48 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method status="PASS" signature="verifycontactus()[pri:2, instance:allureReports.Contact@16aa0a0a]" name="verifycontactus" duration-ms="1649" started-at="2020-03-27T21:03:43 GMT" finished-at="2020-03-27T21:03:44 GMT">
+        <test-method status="PASS" signature="NavigateToFeaturedProduct()[pri:1, instance:allureReports.FeaturedProduct@691a7f8f]" name="NavigateToFeaturedProduct" duration-ms="5607" started-at="2020-03-27T22:47:48 GMT" finished-at="2020-03-27T22:47:53 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToFeaturedProduct -->
+        <test-method status="PASS" signature="newproduct()[pri:2, instance:allureReports.FeaturedProduct@691a7f8f]" name="newproduct" duration-ms="2454" started-at="2020-03-27T22:47:53 GMT" finished-at="2020-03-27T22:47:56 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newproduct -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:allureReports.FeaturedProduct@691a7f8f]" name="teardown" is-config="true" duration-ms="694" started-at="2020-03-27T22:47:56 GMT" finished-at="2020-03-27T22:47:57 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- allureReports.FeaturedProduct -->
+      <class name="allureReports.Contact">
+        <test-method status="PASS" signature="setupinstance()[pri:0, instance:allureReports.Contact@780cb77]" name="setupinstance" is-config="true" duration-ms="12946" started-at="2020-03-27T22:47:21 GMT" finished-at="2020-03-27T22:47:34 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupinstance -->
+        <test-method status="PASS" signature="verifycontactus()[pri:2, instance:allureReports.Contact@780cb77]" name="verifycontactus" duration-ms="1969" started-at="2020-03-27T22:47:34 GMT" finished-at="2020-03-27T22:47:36 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifycontactus -->
-        <test-method status="PASS" signature="recentlyviewedProducts()[pri:3, instance:allureReports.Contact@16aa0a0a]" name="recentlyviewedProducts" duration-ms="1989" started-at="2020-03-27T21:03:44 GMT" finished-at="2020-03-27T21:03:46 GMT">
+        <test-method status="PASS" signature="recentlyviewedProducts()[pri:3, instance:allureReports.Contact@780cb77]" name="recentlyviewedProducts" duration-ms="2233" started-at="2020-03-27T22:47:36 GMT" finished-at="2020-03-27T22:47:38 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recentlyviewedProducts -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:allureReports.Contact@16aa0a0a]" name="teardown" is-config="true" duration-ms="695" started-at="2020-03-27T21:03:46 GMT" finished-at="2020-03-27T21:03:47 GMT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:allureReports.Contact@780cb77]" name="teardown" is-config="true" duration-ms="700" started-at="2020-03-27T22:47:56 GMT" finished-at="2020-03-27T22:47:56 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
