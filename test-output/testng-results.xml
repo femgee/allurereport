@@ -1,79 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-28T12:31:54 GMT" name="Suite" finished-at="2020-03-28T12:33:13 GMT" duration-ms="78724">
+  <suite started-at="2020-03-28T19:01:34 GMT" name="Suite" finished-at="2020-03-28T19:02:09 GMT" duration-ms="34856">
     <groups>
     </groups>
-    <test started-at="2020-03-28T12:31:54 GMT" name="RegressionPack" finished-at="2020-03-28T12:33:13 GMT" duration-ms="78724">
-      <class name="allureReports.RegisterandLogin">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.RegisterandLogin@53fdffa1]" started-at="2020-03-28T12:32:12 GMT" name="setupinstance" finished-at="2020-03-28T12:32:23 GMT" duration-ms="10949" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupinstance -->
-        <test-method signature="registrationTest()[pri:1, instance:allureReports.RegisterandLogin@53fdffa1]" started-at="2020-03-28T12:32:23 GMT" name="registrationTest" finished-at="2020-03-28T12:32:27 GMT" duration-ms="3408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registrationTest -->
-        <test-method signature="login()[pri:2, instance:allureReports.RegisterandLogin@53fdffa1]" started-at="2020-03-28T12:32:27 GMT" name="login" finished-at="2020-03-28T12:32:30 GMT" duration-ms="3500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:allureReports.RegisterandLogin@53fdffa1]" started-at="2020-03-28T12:33:13 GMT" name="afterTest" finished-at="2020-03-28T12:33:13 GMT" duration-ms="700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- allureReports.RegisterandLogin -->
+    <test started-at="2020-03-28T19:01:34 GMT" name="SmokeTest" finished-at="2020-03-28T19:02:09 GMT" duration-ms="34856">
       <class name="allureReports.FeaturedProduct">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.FeaturedProduct@4d465b11]" started-at="2020-03-28T12:31:55 GMT" name="setupinstance" finished-at="2020-03-28T12:32:05 GMT" duration-ms="10323" status="PASS">
+        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.FeaturedProduct@5fbdfdcf]" started-at="2020-03-28T19:01:50 GMT" name="setupinstance" finished-at="2020-03-28T19:01:59 GMT" duration-ms="9249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method signature="NavigateToFeaturedProduct()[pri:1, instance:allureReports.FeaturedProduct@4d465b11]" started-at="2020-03-28T12:32:05 GMT" name="NavigateToFeaturedProduct" finished-at="2020-03-28T12:32:10 GMT" duration-ms="5431" status="PASS">
+        <test-method signature="NavigateToFeaturedProduct()[pri:1, instance:allureReports.FeaturedProduct@5fbdfdcf]" started-at="2020-03-28T19:01:59 GMT" name="NavigateToFeaturedProduct" finished-at="2020-03-28T19:02:05 GMT" duration-ms="5283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToFeaturedProduct -->
-        <test-method signature="newproduct()[pri:2, instance:allureReports.FeaturedProduct@4d465b11]" started-at="2020-03-28T12:32:10 GMT" name="newproduct" finished-at="2020-03-28T12:32:12 GMT" duration-ms="2051" status="PASS">
+        <test-method signature="newproduct()[pri:2, instance:allureReports.FeaturedProduct@5fbdfdcf]" started-at="2020-03-28T19:02:05 GMT" name="newproduct" finished-at="2020-03-28T19:02:08 GMT" duration-ms="2917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newproduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.FeaturedProduct@4d465b11]" started-at="2020-03-28T12:33:12 GMT" name="teardown" finished-at="2020-03-28T12:33:13 GMT" duration-ms="620" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.FeaturedProduct@5fbdfdcf]" started-at="2020-03-28T19:02:08 GMT" name="teardown" finished-at="2020-03-28T19:02:09 GMT" duration-ms="705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- allureReports.FeaturedProduct -->
       <class name="allureReports.Contact">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.Contact@32ee6fee]" started-at="2020-03-28T12:32:54 GMT" name="setupinstance" finished-at="2020-03-28T12:33:05 GMT" duration-ms="11163" status="PASS">
+        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.Contact@505fc5a4]" started-at="2020-03-28T19:01:34 GMT" name="setupinstance" finished-at="2020-03-28T19:01:46 GMT" duration-ms="12049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupinstance -->
-        <test-method signature="verifycontactus()[pri:2, instance:allureReports.Contact@32ee6fee]" started-at="2020-03-28T12:33:05 GMT" name="verifycontactus" finished-at="2020-03-28T12:33:08 GMT" duration-ms="2523" status="PASS">
+        <test-method signature="verifycontactus()[pri:2, instance:allureReports.Contact@505fc5a4]" started-at="2020-03-28T19:01:46 GMT" name="verifycontactus" finished-at="2020-03-28T19:01:48 GMT" duration-ms="1756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifycontactus -->
-        <test-method signature="recentlyviewedProducts()[pri:3, instance:allureReports.Contact@32ee6fee]" started-at="2020-03-28T12:33:08 GMT" name="recentlyviewedProducts" finished-at="2020-03-28T12:33:10 GMT" duration-ms="2351" status="PASS">
+        <test-method signature="recentlyviewedProducts()[pri:3, instance:allureReports.Contact@505fc5a4]" started-at="2020-03-28T19:01:48 GMT" name="recentlyviewedProducts" finished-at="2020-03-28T19:01:50 GMT" duration-ms="2034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recentlyviewedProducts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.Contact@32ee6fee]" started-at="2020-03-28T12:33:11 GMT" name="teardown" finished-at="2020-03-28T12:33:12 GMT" duration-ms="767" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.Contact@505fc5a4]" started-at="2020-03-28T19:02:08 GMT" name="teardown" finished-at="2020-03-28T19:02:08 GMT" duration-ms="701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- allureReports.Contact -->
-      <class name="allureReports.AddProductsToCartandCheckout">
-        <test-method is-config="true" signature="setupinstance()[pri:0, instance:allureReports.AddProductsToCartandCheckout@5562c41e]" started-at="2020-03-28T12:32:30 GMT" name="setupinstance" finished-at="2020-03-28T12:32:42 GMT" duration-ms="11463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupinstance -->
-        <test-method signature="addProducttocart()[pri:3, instance:allureReports.AddProductsToCartandCheckout@5562c41e]" started-at="2020-03-28T12:32:42 GMT" name="addProducttocart" finished-at="2020-03-28T12:32:54 GMT" duration-ms="12240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProducttocart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:allureReports.AddProductsToCartandCheckout@5562c41e]" started-at="2020-03-28T12:33:10 GMT" name="teardown" finished-at="2020-03-28T12:33:11 GMT" duration-ms="1059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- allureReports.AddProductsToCartandCheckout -->
-    </test> <!-- RegressionPack -->
+    </test> <!-- SmokeTest -->
   </suite> <!-- Suite -->
 </testng-results>

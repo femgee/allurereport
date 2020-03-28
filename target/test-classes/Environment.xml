@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+`[OneTimeTearDown]
+public void TearDown()
+{
+GenerateEnvironmentXml();
+}
+
+private void GenerateEnvironmentXml()
+{
+string date = DateTime.Today.ToString("yyyy-MM-dd");
+string formattedDate = date.Replace("-", "") + "_";
+string platformName = null;
+
+        if (PlatformToTest().Equals("WINDOWS"))
+        {
+            platformName = PlatformName().Replace(" ", "") + Browser() + "_";
+        }
+        else
+        {
+            platformName = PlatformName().Replace(" ", "") + "_";
+        }
+
+        string osVersion = "os" + OSVersion();
+        string folderName = formattedDate + platformName + osVersion;
+
+        //Navigate to the TestResults folder
+        string parentFolder = "C:\\Temp\\RegressionReports\\";
+        string testResultDirectory = parentFolder + GetEnvironmentName() + "/" + folderName + "/TestResults";
+
+        XmlWriter xmlWriter = XmlWriter.Create(testResultDirectory + "\\environment.xml");
+
+        xmlWriter.WriteStartDocument();
+        xmlWriter.WriteStartElement("environment");
+
+        xmlWriter.WriteStartElement("parameter");
+        xmlWriter.WriteElementString("key", "Environment");
+        xmlWriter.WriteElementString("value", ApplicationUrl());
+        xmlWriter.WriteEndElement();
+
+        xmlWriter.WriteStartElement("parameter");
+        xmlWriter.WriteElementString("key", "Browser");
+        xmlWriter.WriteElementString("value", Browser());
+        xmlWriter.WriteEndElement();
+
+        xmlWriter.WriteStartElement("parameter");
+        xmlWriter.WriteElementString("key", "Browser Version");
+        xmlWriter.WriteElementString("value", BrowserVersion());
+        xmlWriter.WriteEndElement();
+
+        xmlWriter.WriteStartElement("parameter");
+        xmlWriter.WriteElementString("key", "Platform");
+        xmlWriter.WriteElementString("value", PlatformName());
+        xmlWriter.WriteEndElement();
+
+        xmlWriter.WriteStartElement("parameter");
+        xmlWriter.WriteElementString("key", "Device Name");
+        xmlWriter.WriteElementString("value", DeviceName());
+        xmlWriter.WriteEndElement();
+
+        xmlWriter.WriteStartElement("parameter");
+        xmlWriter.WriteElementString("key", "Device OS Version");
+        xmlWriter.WriteElementString("value", DeviceOSVersion());
+        xmlWriter.WriteEndElement();
+
+        xmlWriter.WriteEndDocument();
+        xmlWriter.Flush();
+        xmlWriter.Close(); `
