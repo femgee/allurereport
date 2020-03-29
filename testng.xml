@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="SmokeTest">
     <classes>
-      <class name="allureReports.Contact"/>
       <class name="allureReports.FeaturedProduct"/>
     </classes>
   </test> <!-- SmokeTest -->
