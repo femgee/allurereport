@@ -1,6 +1,2 @@
-allureReports\BaseClass.class
-allureReports\AllureListener.class
-allureReports\Contact.class
-allureReports\AddProductsToCartandCheckout.class
-allureReports\FeaturedProduct.class
-allureReports\RegisterandLogin.class
+javac.bat
+org.codehaus.plexus.compiler.javac.JavacCompiler7405823466885265249arguments

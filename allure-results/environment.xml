@@ -2,14 +2,18 @@
 <environment>
     <parameter>
         <key>Browser</key>
-        <value>Chrome</value>
+        <value>Firefox</value>
     </parameter>
     <parameter>
         <key>Browser.Version</key>
-        <value>80.0.3987.149</value>
+        <value>74.0</value>
+    </parameter>
+       <parameter>
+        <key>Operating.System</key>
+        <value>Windows10</value>
     </parameter>
     <parameter>
         <key>Stand</key>
-        <value>Production</value>
+        <value>Build</value>
     </parameter>
 </environment>

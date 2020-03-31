@@ -5,11 +5,35 @@
     <classes>
       <class name="allureReports.Contact">
         <methods>
+          <include name="recentlyviewedProducts"/>
           <include name="verifycontactus"/>
           <include name="teardown"/>
           <include name="setupinstance"/>
         </methods>
       </class> <!-- allureReports.Contact -->
+      <class name="allureReports.FeaturedProduct">
+        <methods>
+          <include name="newproduct"/>
+          <include name="teardown"/>
+          <include name="NavigateToFeaturedProduct"/>
+          <include name="setupinstance"/>
+        </methods>
+      </class> <!-- allureReports.FeaturedProduct -->
+      <class name="allureReports.RegisterandLogin">
+        <methods>
+          <include name="setupinstance"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="registrationTest"/>
+        </methods>
+      </class> <!-- allureReports.RegisterandLogin -->
+      <class name="allureReports.AddProductsToCartandCheckout">
+        <methods>
+          <include name="setupinstance"/>
+          <include name="teardown"/>
+          <include name="addProducttocart"/>
+        </methods>
+      </class> <!-- allureReports.AddProductsToCartandCheckout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
