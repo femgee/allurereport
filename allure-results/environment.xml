@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <environment>
     <parameter>
+        <key>Automation.tool</key>
+        <value>Selenium</value>
+    </parameter>
+    <parameter>
         <key>Browser</key>
-        <value>Firefox</value>
+        <value>Edge</value>
     </parameter>
     <parameter>
         <key>Browser.Version</key>
-        <value>74.0</value>
+        <value>44.18362.449.0</value>
     </parameter>
        <parameter>
         <key>Operating.System</key>
