@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-03T21:09:11 BST" name="Default suite" finished-at="2020-04-03T21:09:25 BST" duration-ms="14800">
+  <suite started-at="2020-04-11T09:42:09 BST" name="Default suite" finished-at="2020-04-11T09:42:28 BST" duration-ms="18595">
     <groups>
     </groups>
-    <test started-at="2020-04-03T21:09:11 BST" name="Default test" finished-at="2020-04-03T21:09:25 BST" duration-ms="14800">
+    <test started-at="2020-04-11T09:42:09 BST" name="Default test" finished-at="2020-04-11T09:42:28 BST" duration-ms="18595">
       <class name="allureReports.localTest">
-        <test-method is-config="true" signature="instance()[pri:0, instance:allureReports.localTest@1e683a3e]" started-at="2020-04-03T21:09:11 BST" name="instance" finished-at="2020-04-03T21:09:21 BST" duration-ms="10636" status="PASS">
+        <test-method is-config="true" signature="instance()[pri:0, instance:allureReports.localTest@1e683a3e]" started-at="2020-04-11T09:42:09 BST" name="instance" finished-at="2020-04-11T09:42:20 BST" duration-ms="10623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instance -->
-        <test-method signature="test1()[pri:0, instance:allureReports.localTest@1e683a3e]" started-at="2020-04-03T21:09:21 BST" name="test1" finished-at="2020-04-03T21:09:25 BST" duration-ms="3981" status="PASS">
+        <test-method signature="test1()[pri:0, instance:allureReports.localTest@1e683a3e]" started-at="2020-04-11T09:42:20 BST" name="test1" finished-at="2020-04-11T09:42:27 BST" duration-ms="7730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

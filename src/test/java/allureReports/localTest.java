@@ -23,6 +23,6 @@ public class localTest {
 	@Test
 	public void test1() {
 		
-		driver.get("http://localhost/test/");
+		driver.get("http://www.hrjconsulting.eu/");
 	}
 }

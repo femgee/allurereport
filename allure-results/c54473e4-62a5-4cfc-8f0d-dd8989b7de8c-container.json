@@ -1,1 +1,0 @@
-{"uuid":"c54473e4-62a5-4cfc-8f0d-dd8989b7de8c","name":"allureReports.localTest","children":["84dbc875-b47b-484f-8769-8e556c18fa55"],"befores":[{"name":"instance","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1585847622943,"stop":1585847633317}],"afters":[],"links":[],"start":1585847622913,"stop":1585847636031}

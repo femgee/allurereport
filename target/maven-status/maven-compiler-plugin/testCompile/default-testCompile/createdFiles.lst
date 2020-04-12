@@ -1,2 +1,8 @@
-javac.bat
-org.codehaus.plexus.compiler.javac.JavacCompiler7405823466885265249arguments
+allureReports\Contact.class
+allureReports\AddProductsToCartandCheckout.class
+allureReports\localTest.class
+allureReports\RegisterandLogin.class
+allureReports\BaseClass.class
+allureReports\communityPoll.class
+allureReports\AllureListener.class
+allureReports\FeaturedProduct.class
